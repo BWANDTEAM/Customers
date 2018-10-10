@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/containerbank/resources/images/favicon.png">
+
+    <title>ContainerBank :: a Spring Framework demonstration</title>
+
+
+    <link href="css/containerbank.css" rel="stylesheet"/>
+
+
+    <link href="css/jquery-ui.min.css" rel="stylesheet"/>
+
+    <link href="css/jquery-ui.theme.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/containerbank/"><span></span></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                <span class="sr-only"><os-p>Toggle navigation</os-p></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="main-navbar">
+            <ul class="nav navbar-nav navbar-right">
+
+
+
+
+
+
+
+
+              <li class="">
+                  <a href="index.html"
+                     title="home page">
+
+                                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                  <span>Home</span>
+
+                  </a>
+              </li>
+
+
+
+
+
+
+
+
+
+              <li class="active">
+                  <a href="findCustomer.html"
+                     title="find customers">
+
+                                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                  <span>Find customers</span>
+
+                  </a>
+              </li>
+
+
+
+
+
+
+
+
+
+              <li class="">
+                  <a href="advisors.html"
+                     title="advisors">
+
+                                  <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                                  <span>Advisors</span>
+
+                  </a>
+              </li>
+
+
+
+
+
+
+
+
+
+              <li class="">
+                  <a href="oups.html"
+                     title="trigger a RuntimeException to see how it is handled">
+
+                                  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                                  <span>Error</span>
+
+                  </a>
+              </li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="container xd-container">
+
+        <h2>Customer Information</h2>
+
+
+    <table class="table table-striped">
+        <tr>
+            <th>Name</th>
+            <td><b>Léon Vigouroux</b></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>18 rue des Batignolles</td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td>Marseille</td>
+        </tr>
+        <tr>
+            <th>Telephone</th>
+            <td>0927115243</td>
+        </tr>
+    </table>
+
+    <a href="3/edit.html" class="btn btn-default">Edit Customer</a>
+
+    <a href="3/cards/new.html" class="btn btn-default">Add New Card</a>
+
+    <br/>
+    <br/>
+    <br/>
+    <h2>Cards and Payments</h2>
+
+    <table class="table table-striped">
+        <tr>
+                <td valign="top">
+                    <dl class="dl-horizontal">
+                        <dt>Name</dt>
+                        <dd>Bouygues Telecom</dd>
+                        <dt>Birth Date</dt>
+                        <dd>2010-03-07</dd>
+                        <dt>Type</dt>
+                        <dd>debit</dd>
+                    </dl>
+                </td>
+                <td valign="top">
+                    <table class="table-condensed">
+                        <thead>
+                        <tr>
+                            <th>Payment Date</th>
+                            <th>Description</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <a href="/containerbank/customers/3/cards/4/edit">Edit Card</a>
+                            </td>
+                            <td>
+                                <a href="/containerbank/customers/3/cards/4/payments/new">Add Payment</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        <tr>
+                <td valign="top">
+                    <dl class="dl-horizontal">
+                        <dt>Name</dt>
+                        <dd>Cadeau FNAC</dd>
+                        <dt>Birth Date</dt>
+                        <dd>2011-04-17</dd>
+                        <dt>Type</dt>
+                        <dd>debit</dd>
+                    </dl>
+                </td>
+                <td valign="top">
+                    <table class="table-condensed">
+                        <thead>
+                        <tr>
+                            <th>Payment Date</th>
+                            <th>Description</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                                <td>2015-09-04</td>
+                                <td>Carrefour</td>
+                            </tr>
+                        <tr>
+                            <td>
+                                <a href="/containerbank/customers/3/cards/3/edit">Edit Card</a>
+                            </td>
+                            <td>
+                                <a href="/containerbank/customers/3/cards/3/payments/new">Add Payment</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+
+</div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+
+
+
+<script src="js/jquery-ui.min.js"></script>
+
+
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
