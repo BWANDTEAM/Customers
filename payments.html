@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/containerbank/resources/images/favicon.png">
+
+    <title>ContainerBank :: a Spring Framework demonstration</title>
+
+
+
+    <link href="css/containerbank.css" rel="stylesheet"/>
+
+
+
+    <link href="css/jquery-ui.min.css" rel="stylesheet"/>
+
+    <link href="css/jquery-ui.theme.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/containerbank/"><span></span></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                <span class="sr-only"><os-p>Toggle navigation</os-p></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="main-navbar">
+            <ul class="nav navbar-nav navbar-right">
+
+
+
+              <li class="">
+                  <a href="index.html"
+                     title="home page">
+
+                                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                  <span>Home</span>
+
+                  </a>
+              </li>
+
+
+
+
+
+
+
+
+
+              <li class="active">
+                  <a href="findCustomer.html"
+                     title="find customers">
+
+                                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                  <span>Find customers</span>
+
+                  </a>
+              </li>
+
+
+
+
+
+
+
+
+
+              <li class="">
+                  <a href="advisors.html"
+                     title="advisors">
+
+                                  <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                                  <span>Advisors</span>
+
+                  </a>
+              </li>
+
+
+
+
+
+
+
+
+
+              <li class="">
+                  <a href="oups.html"
+                     title="trigger a RuntimeException to see how it is handled">
+
+                                  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                                  <span>Error</span>
+
+                  </a>
+              </li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="container xd-container">
+
+        <h2>New Payment</h2>
+
+        <b>Card</b>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Birth Date</th>
+                <th>Type</th>
+                <th>Customer</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>Bouygues Telecom</td>
+                <td>2010/03/07</td>
+                <td>debit</td>
+                <td>Léon Vigouroux</td>
+            </tr>
+        </table>
+
+        <form id="payment" class="form-horizontal" action="/containerbank/customers/3/cards/4/payments/new" method="post"><div class="form-group has-feedback">
+
+
+
+
+
+
+
+
+
+    <div class="form-group ">
+        <label class="col-sm-2 control-label">Date</label>
+
+        <div class="col-sm-10">
+            <input id="date" name="date" class="form-control" type="text" value="2018/10/10"/>
+
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="form-group ">
+        <label class="col-sm-2 control-label">Description</label>
+
+        <div class="col-sm-10">
+            <input id="description" name="description" class="form-control" type="text" value=""/>
+
+
+        </div>
+    </div>
+
+</div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="hidden" name="cardId" value="4"/>
+                    <button class="btn btn-default" type="submit">Add Payment</button>
+                </div>
+            </div>
+        </form><br/>
+        <b>Previous Payments</b>
+        <table class="table table-striped">
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+            </table>
+    </div>
+</div>
+
+
+
+
+<script src="js/jquery.min.js"></script>
+
+
+
+<script src="js/jquery-ui.min.js"></script>
+
+
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+            $(function () {
+                $("#date").datepicker({dateFormat: 'yy/mm/dd'});
+            });
+        </script></body>
+
+</html>
